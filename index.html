@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignis Briquettes | Premium Charcoal for Global Needs</title>
+    <meta name="description" content="Export quality coconut shell and hardwood charcoal briquettes. High heat, low ash, and eco-friendly sustainable fuel.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        charcoal: {
+                            900: '#1a1a1a',
+                            800: '#2d2d2d',
+                            700: '#3f3f3f',
+                        },
+                        flame: {
+                            500: '#f59e0b', // amber-500
+                            600: '#d97706', // amber-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(26, 26, 26, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero_bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-charcoal-900 text-gray-300 font-sans antialiased selection:bg-flame-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-fire text-flame-500 text-2xl"></i>
+                        <span class="font-serif text-2xl font-bold text-white tracking-wider">IGNIS</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" data-i18n="nav.home" class="text-white hover:text-flame-500 transition-colors duration-300 font-medium">Home</a>
+                    <a href="about.html" data-i18n="nav.about" class="text-gray-300 hover:text-flame-500 transition-colors duration-300 font-medium">About Us</a>
+                    <a href="products.html" data-i18n="nav.products" class="text-gray-300 hover:text-flame-500 transition-colors duration-300 font-medium">Products</a>
+                    <a href="contact.html" data-i18n="nav.contact" class="px-5 py-2.5 bg-flame-500 text-white rounded-md hover:bg-flame-600 transition-colors duration-300 font-medium shadow-[0_0_15px_rgba(245,158,11,0.3)]">Contact Us</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-2 ml-4 border-l border-white/20 pl-6">
+                        <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn text-flame-500 font-bold hover:text-flame-400 transition-colors text-sm uppercase">EN</button>
+                        <span class="text-white/30 text-sm">|</span>
+                        <button onclick="changeLanguage('id')" data-lang="id" class="lang-btn text-gray-400 hover:text-flame-400 transition-colors text-sm uppercase">ID</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center hero-bg">
+        <div class="text-center px-4 max-w-4xl mx-auto mt-20 animate-fade-in-up">
+            <span data-i18n="home.subtitle" class="text-flame-500 uppercase tracking-[0.2em] font-semibold text-sm mb-4 block">Export Quality Charcoal</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+                <span data-i18n="home.title1">Premium Energy for a</span> <span data-i18n="home.title2" class="text-transparent bg-clip-text bg-gradient-to-r from-flame-500 to-yellow-300">Global</span> <span data-i18n="home.title3">Market.</span>
+            </h1>
+            <p data-i18n="home.desc" class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                We manufacture and export high-grade coconut shell and hardwood briquettes. Sustainable, long-burning, and consistently hot.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html" class="px-8 py-4 bg-flame-500 text-white rounded-md hover:bg-flame-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-flame-500/50 flex items-center justify-center gap-2">
+                    <span data-i18n="home.btn.explore">Explore Products</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="px-8 py-4 bg-transparent border border-white text-white rounded-md hover:bg-white hover:text-charcoal-900 transition-all duration-300 font-semibold flex items-center justify-center gap-2">
+                    <span data-i18n="home.btn.quote">Request a Quote</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#features" class="text-white/50 hover:text-white transition-colors">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-charcoal-900 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-i18n="home.features.title" class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Why Choose Ignis?</h2>
+                <div class="w-24 h-1 bg-flame-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="group p-8 rounded-2xl bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-temperature-arrow-up text-3xl text-flame-500"></i>
+                    </div>
+                    <h3 data-i18n="home.features.1.title" class="text-xl font-bold text-white mb-3">High Calorific Value</h3>
+                    <p data-i18n="home.features.1.desc" class="text-gray-400 leading-relaxed">Our briquettes deliver consistent, intense heat (+7000 kcal/kg) perfect for BBQ and shisha applications.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="group p-8 rounded-2xl bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-leaf text-3xl text-flame-500"></i>
+                    </div>
+                    <h3 data-i18n="home.features.2.title" class="text-xl font-bold text-white mb-3">100% Eco-Friendly</h3>
+                    <p data-i18n="home.features.2.desc" class="text-gray-400 leading-relaxed">Made from sustainably sourced coconut shells and hardwood sawdust. No trees are cut down for our production.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="group p-8 rounded-2xl bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-clock text-3xl text-flame-500"></i>
+                    </div>
+                    <h3 data-i18n="home.features.3.title" class="text-xl font-bold text-white mb-3">Long Burning Time</h3>
+                    <p data-i18n="home.features.3.desc" class="text-gray-400 leading-relaxed">Enjoy extended sessions. Our highly compressed briquettes burn up to 3 times longer than regular charcoal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview Section -->
+    <section class="py-24 bg-charcoal-900 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span data-i18n="home.catalog.subtitle" class="text-flame-500 uppercase tracking-[0.2em] font-semibold text-sm mb-4 block">Our Catalog</span>
+                <h2 data-i18n="home.catalog.title" class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Premium Briquettes</h2>
+                <div class="w-24 h-1 bg-flame-500 mx-auto rounded-full mb-8"></div>
+                <p data-i18n="home.catalog.desc" class="text-gray-400 max-w-2xl mx-auto">Explore our range of high-quality charcoal briquettes, perfect for various applications from shisha to professional BBQ.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="group rounded-2xl overflow-hidden bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img src="images/shisha.png" alt="Shisha Briquettes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 data-i18n="home.prod.1.title" class="text-xl font-bold text-white mb-2">Coconut Shisha Briquettes</h3>
+                        <p data-i18n="home.prod.1.desc" class="text-gray-400 mb-6">100% pure coconut shell, zero chemicals, white ash, and burns up to 2.5 hours.</p>
+                        <a href="products.html" class="text-flame-500 font-medium hover:text-flame-400 flex items-center gap-2"><span data-i18n="home.prod.btn">View Details</span> <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="group rounded-2xl overflow-hidden bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img src="images/bbq.png" alt="BBQ Briquettes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 data-i18n="home.prod.2.title" class="text-xl font-bold text-white mb-2">Hexagonal BBQ Briquettes</h3>
+                        <p data-i18n="home.prod.2.desc" class="text-gray-400 mb-6">High heat, low smoke hardwood blend designed for professional grilling.</p>
+                        <a href="products.html" class="text-flame-500 font-medium hover:text-flame-400 flex items-center gap-2"><span data-i18n="home.prod.btn">View Details</span> <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group rounded-2xl overflow-hidden bg-charcoal-800 border border-white/5 hover:border-flame-500/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img src="images/lump.png" alt="Hardwood Charcoal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 data-i18n="home.prod.3.title" class="text-xl font-bold text-white mb-2">Lump Hardwood Charcoal</h3>
+                        <p data-i18n="home.prod.3.desc" class="text-gray-400 mb-6">Traditional lump charcoal for authentic wood-fired flavor and quick ignition.</p>
+                        <a href="products.html" class="text-flame-500 font-medium hover:text-flame-400 flex items-center gap-2"><span data-i18n="home.prod.btn">View Details</span> <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-flex px-8 py-4 bg-transparent border border-flame-500 text-flame-500 rounded-md hover:bg-flame-500 hover:text-white transition-all duration-300 font-semibold items-center gap-2">
+                    <span data-i18n="home.catalog.btn">See All Products</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach Section -->
+    <section class="py-24 bg-charcoal-800 relative overflow-hidden">
+        <!-- Abstract background shape -->
+        <div class="absolute -right-40 -top-40 w-96 h-96 bg-flame-500/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2">
+                <img src="images/global.png" alt="Global Export" class="rounded-xl shadow-2xl grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+            </div>
+            <div class="w-full md:w-1/2">
+                <span data-i18n="home.global.subtitle" class="text-flame-500 font-semibold tracking-wider text-sm mb-2 block">WORLDWIDE SHIPPING</span>
+                <h2 data-i18n="home.global.title" class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Trusted by Partners Across the Globe</h2>
+                <p data-i18n="home.global.desc" class="text-gray-400 mb-8 leading-relaxed text-lg">
+                    With robust logistics and strict quality control, we ensure your cargo arrives on time and in perfect condition. We handle full container loads (FCL) to the Middle East, Europe, Americas, and Asia.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-flame-500"></i> <span data-i18n="home.global.li1">OEM Packaging Available</span>
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-flame-500"></i> <span data-i18n="home.global.li2">Export-grade Quality Control</span>
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-flame-500"></i> <span data-i18n="home.global.li3">Complete Legal Documentation</span>
+                    </li>
+                </ul>
+                <a href="contact.html" class="inline-flex items-center gap-2 text-white font-medium hover:text-flame-500 transition-colors border-b border-transparent hover:border-flame-500 pb-1">
+                    <span data-i18n="home.global.btn">Partner with us</span> <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-900 border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire text-flame-500 text-2xl"></i>
+                        <span class="font-serif text-2xl font-bold text-white tracking-wider">IGNIS</span>
+                    </a>
+                    <p data-i18n="footer.desc" class="text-gray-400 max-w-sm mb-6">
+                        Premium briquette manufacturer from Indonesia, dedicated to supplying the world with sustainable, high-quality charcoal products.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 data-i18n="footer.links" class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" data-i18n="nav.home" class="text-gray-400 hover:text-flame-500 transition-colors">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about" class="text-gray-400 hover:text-flame-500 transition-colors">About Us</a></li>
+                        <li><a href="products.html" data-i18n="nav.products" class="text-gray-400 hover:text-flame-500 transition-colors">Products</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact" class="text-gray-400 hover:text-flame-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 data-i18n="footer.contact" class="text-white font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-flame-500"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-flame-500"></i>
+                            <span>export@ignisbriquettes.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-flame-500"></i>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p data-i18n="footer.rights" class="text-gray-500 text-sm">© 2026 Ignis Briquettes. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-flame-500 hover:text-white transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-flame-500 hover:text-white transition-all">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://wa.me/6281234567890?text=Hello,%20I%20am%20interested%20in%20your%20briquettes." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg shadow-green-500/40 hover:bg-green-600 hover:scale-110 transition-all duration-300 animate-bounce"
+       aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="lang.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ignis Briquettes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'], },
+                    colors: { charcoal: { 900: '#1a1a1a', 800: '#2d2d2d', 700: '#3f3f3f' }, flame: { 500: '#f59e0b', 600: '#d97706' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(26, 26, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .page-header {
+            background-color: #1a1a1a;
+            background-image: radial-gradient(circle at 50% 0%, #3f3f3f 0%, #1a1a1a 70%);
+        }
+        .form-input {
+            width: 100%; background: #2d2d2d; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0.5rem;
+            padding: 0.75rem 1rem; color: white; outline: none; transition: border-color 0.3s;
+        }
+        .form-input:focus { border-color: #f59e0b; }
+    </style>
+</head>
+<body class="bg-charcoal-900 text-gray-300 font-sans antialiased selection:bg-flame-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <i class="fa-solid fa-fire text-flame-500 text-2xl"></i>
+                    <span class="font-serif text-2xl font-bold text-white tracking-wider">IGNIS</span>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" data-i18n="nav.home" class="text-gray-300 hover:text-flame-500 transition-colors font-medium">Home</a>
+                    <a href="about.html" data-i18n="nav.about" class="text-gray-300 hover:text-flame-500 transition-colors font-medium">About Us</a>
+                    <a href="products.html" data-i18n="nav.products" class="text-gray-300 hover:text-flame-500 transition-colors font-medium">Products</a>
+                    <a href="contact.html" data-i18n="nav.contact" class="text-white hover:text-flame-500 transition-colors font-medium">Contact Us</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-2 ml-4 border-l border-white/20 pl-6">
+                        <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn text-flame-500 font-bold hover:text-flame-400 transition-colors text-sm uppercase">EN</button>
+                        <span class="text-white/30 text-sm">|</span>
+                        <button onclick="changeLanguage('id')" data-lang="id" class="lang-btn text-gray-400 hover:text-flame-400 transition-colors text-sm uppercase">ID</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header pt-40 pb-16 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 data-i18n="contact.header.title" class="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Let's Talk Business</h1>
+            <div class="w-20 h-1 bg-flame-500 mx-auto rounded-full mb-6"></div>
+            <p data-i18n="contact.header.desc" class="text-xl text-gray-400 font-light">Reach out to us for wholesale inquiries, custom packaging, and export details.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div>
+                    <h2 data-i18n="contact.h2" class="text-2xl font-serif font-bold text-white mb-8">Get In Touch</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-charcoal-800 border border-white/5 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-flame-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.office" class="text-white font-semibold mb-1">Head Office & Factory</h4>
+                                <p data-i18n="contact.office.desc" class="text-gray-400 leading-relaxed">Jl. Industri Raya No. 45<br>Kawasan Industri Cikarang<br>Jawa Barat, Indonesia 17530</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-charcoal-800 border border-white/5 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-flame-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.email" class="text-white font-semibold mb-1">Email Us</h4>
+                                <p class="text-gray-400">export@ignisbriquettes.com</p>
+                                <p class="text-gray-400">info@ignisbriquettes.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-charcoal-800 border border-white/5 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-flame-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="contact.phone" class="text-white font-semibold mb-1">Call / WhatsApp</h4>
+                                <p class="text-gray-400">+62 812 3456 7890 (International Sales)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-charcoal-800 p-8 rounded-2xl border border-white/5 shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label data-i18n="contact.form.fname" class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                                <input type="text" class="form-input" required placeholder="John">
+                            </div>
+                            <div>
+                                <label data-i18n="contact.form.lname" class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                                <input type="text" class="form-input" required placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label data-i18n="contact.form.company" class="block text-sm font-medium text-gray-400 mb-2">Company Name</label>
+                            <input type="text" class="form-input" placeholder="Your Company Ltd.">
+                        </div>
+                        <div class="mb-6">
+                            <label data-i18n="contact.form.email" class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                            <input type="email" class="form-input" required placeholder="john@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label data-i18n="contact.form.type" class="block text-sm font-medium text-gray-400 mb-2">Inquiry Type</label>
+                            <select class="form-input">
+                                <option data-i18n="contact.form.type.1">Request for Quotation</option>
+                                <option data-i18n="contact.form.type.2">Sample Request</option>
+                                <option data-i18n="contact.form.type.3">OEM/Custom Packaging</option>
+                                <option data-i18n="contact.form.type.4">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-8">
+                            <label data-i18n="contact.form.msg" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                            <textarea rows="4" class="form-input resize-none" required placeholder="Tell us about your requirements (quantity, destination port, etc.)" data-i18n-placeholder="contact.form.msg"></textarea>
+                        </div>
+                        <button type="submit" data-i18n="contact.form.btn" class="w-full py-4 bg-flame-500 text-white font-bold rounded-lg hover:bg-flame-600 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-900 border-t border-white/10 py-8 text-center text-gray-500">
+        <p data-i18n="footer.rights">© 2026 Ignis Briquettes. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://wa.me/6281234567890?text=Hello,%20I%20am%20interested%20in%20your%20briquettes." 
+       target="_blank" rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg shadow-green-500/40 hover:bg-green-600 hover:scale-110 transition-all duration-300"
+       aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="lang.js"></script>
+</body>
+</html>
